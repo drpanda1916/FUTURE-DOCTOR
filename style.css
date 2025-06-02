@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f2f2f2;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  background: linear-gradient(to right, red, orange, green, blue, violet);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#quiz-container {
+  background: white;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+#quiz-container p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#quiz-container label {
+  display: block;
+  margin: 5px 0;
+}
+
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: red;
+  font-weight: bold;
+}
