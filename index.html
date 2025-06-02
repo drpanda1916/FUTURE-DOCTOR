@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Future Doctor</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <title>Future Doctor Quiz</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Future Doctor - FMGE Questions</h1>
-  <div id="question-container">
-    <h2 id="question">Which cranial nerve is responsible for facial expressions?</h2>
-    <ul id="options">
-      <li>Trigeminal nerve</li>
-      <li>Facial nerve</li>
-      <li>Vagus nerve</li>
-      <li>Accessory nerve</li>
-    </ul>
+  <div class="subject-filter">
+    <label for="subject">Choose a subject:</label>
+    <select id="subject" onchange="filterQuestionsBySubject()">
+      <option value="all">All</option>
+      <option value="Anatomy">Anatomy</option>
+      <option value="Physiology">Physiology</option>
+      <option value="Biochemistry">Biochemistry</option>
+      <option value="Pharmacology">Pharmacology</option>
+      <option value="Microbiology">Microbiology</option>
+      <option value="Pathology">Pathology</option>
+      <option value="Surgery">Surgery</option>
+    </select>
+  </div>
+  <div id="quiz-container">
+    <div id="question"></div>
+    <div id="options"></div>
+    <button onclick="nextQuestion()">Next</button>
   </div>
   <script src="app.js"></script>
 </body>

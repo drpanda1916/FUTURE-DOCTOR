@@ -1,30 +1,17 @@
+
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background: #f9f9f9;
-  color: #333;
 }
-
-h1 {
-  color: #2c3e50;
+.subject-filter {
+  margin-bottom: 20px;
 }
-
-#question-container {
-  background: #fff;
+#quiz-container {
+  background: #f4f4f4;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  background: #e1f5fe;
-  margin: 8px 0;
-  padding: 10px;
-  border-radius: 4px;
-  cursor: pointer;
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
 }
